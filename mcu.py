@@ -7,7 +7,7 @@ def move_servo(angle):
 def main():
     global pin9
     
-    board=pyfirmata.Arduino('/dev/ttyUSB0')
+    board=pyfirmata.Arduino('/dev/ttyUSB0') # this port you should change
 
     iter8 = pyfirmata.util.Iterator(board)
     iter8.start()
